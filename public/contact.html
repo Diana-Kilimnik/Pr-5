@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>3 Column Layout</title>
+   <link rel="stylesheet" href="../assets/css/layout.css">
+   <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+<div class="header">
+        <a href="index.html" class="logo">
+            <img src="../assets/img/logo.png"  width="170" height="150"  alt="" />
+        </a>
+        <a href="#" class="banner">
+            <img src="images/banners.png" alt="" />
+        </a>
+</div>
+
+<div class="container">
+   <main class="center column">
+    <style>
+        .column {
+         column-width: 300px;
+         column-count: 2;
+         column-gap: 30px;
+         margin-top: 0px;
+        }
+       </style>
+       <article>
+           <h1>User details</h1>
+            <p><input class="input" name="name" type="text" placeholder="Full name*"/></p>
+            <p>Your birthday:<input type="date" value="Your birthday*" name="calendar" placeholder="Your birthday*" /></p>
+            <style>
+            .select-css { 
+                display: inline; 
+                border-color: #dddcdc;
+                font-family: Verdana, Arial, sans-serif; 
+                font-size: 16px;
+                color: #999494;
+                line-height: 1.3; 
+                padding: .6em 1.4em .5em .8em;
+                width: 82%; 
+                
+              }
+            </style>
+
+            <p><select class = "select-css">
+                    <option value selected disabled="Gender">Gender</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                   </select></p>
+                <style>
+                    .select-css1 { 
+                        display: inline; 
+                        border-color: #dddcdc;
+                        font-family: Verdana, Arial, sans-serif; 
+                        font-size: 16px;
+                        color: #999494;
+                        line-height: 1.3; 
+                        padding: .6em 1.4em .5em .8em;
+                        width: 30%; 
+                        max-width: 100%; 
+                      }
+                    </style>
+
+                    <select class = "select-css1">
+                    <option value selected disabled="Country">Country</option>
+                    <option value="Female">Ukraine</option>
+                    <option value="Male">USA</option>
+                    <option value="Male">Britain</option>
+                    <option value="Male">Brazil</option>
+                    <option value="Male">Canada</option></select>
+                   <input  type="tel" name="tel" placeholder="Phone*"/>
+            <p><textarea name="message" cols="38" rows="1.5" placeholder="Tell us about yourself"></textarea></p>
+            <p><input type="submit" value="Submit" name="submit" ></p>
+        <p></p>
+
+        <h1>Account details</h1>
+            <p><input class="input" name="name" type="text" placeholder="Username*"/> </p>
+            <p><input class="input" name="form" type="email" placeholder="Email*"/> </p>
+            <p><input class="input" name="password" type="password" placeholder="Password*"/> 
+            <input class="input" name="name" type="password" placeholder="Confirm Password*"/> </p>
+             
+            <script>
+                function disableSubmit() {
+                 document.getElementById("submit").disabled = true;
+                }
+               
+                 function activateButton(element) {
+               
+                     if(element.checked) {
+                       document.getElementById("submit").disabled = false;
+                      }
+                      else  {
+                       document.getElementById("submit").disabled = true;
+                     }
+               
+                 }
+               </script>
+               <body onload="disableSubmit()">
+                <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree Terms & Coditions
+                <br><br>
+                <input type="submit" value="Submit" name="submit">
+            </body>
+        <p></p>
+       </article>
+   </main>
+   <nav class="left column">
+    <h3>Media & table</h3>
+    <ul>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="table.html">Table</a></li>
+    </ul>
+    <h3>About & contact</h3>
+    <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+   </nav> 
+   <div class="right column">
+       <h3>Right heading</h3>
+       <p></p>
+   </div>
+</div>
+<div class="footer-wrapper">
+    <footer class="footer">
+        <div class="column-left">
+            <a href="index.html" class="logo">
+                    <img src="../assets/img/logo.png"  width="75" height="65"  alt="" /> 
+                </a>
+            <div class="copiright">
+                <div class="table-cell">
+                    © 2020. All rights reserved.
+                </div>
+            </div>
+        </div>
+        </footer>
+</div>
+</body>
+</html>

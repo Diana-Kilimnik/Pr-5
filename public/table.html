@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>3 Column Layout</title>
+   <link rel="stylesheet" href="../assets/css/layout.css">
+   <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+<div class="header">
+        <a href="index.html" class="logo">
+            <img src="../assets/img/logo.png"  width="170" height="150"  alt="" /> 
+        </a>
+        <a href="#" class="banner">
+            <img src="images/banners.png" alt="" />
+        </a>
+</div>
+
+<div class="container">
+   <main class="center column">
+       <article>
+           <h1>TABLE</h1>
+           <table border="1" >
+            <tr>
+                <th>Firm</th><th>Org</th><th>Lob</th><th>Sub Lob</th>
+                <th>Business Plans</th>
+                <th>Business Components</th>
+              </tr>
+
+            <tr align="center">
+             <td rowspan="15">JPMS</td>
+             <td rowspan="7">CST</td>
+             <td rowspan="4">CT</td>
+            </tr>
+            
+            <tr align="center"><td>ADS</td><td>1</td><td>10</td></tr>
+            <tr align="center"><td>BTO</td><td>2</td><td>15</td></tr>
+            <tr align="center"><td>CSI</td><td>3</td><td>6</td></tr>
+            <tr align="center"><td rowspan="3">VCT</td></tr>
+            <tr align="center"><td>ADS</td><td>4</td><td>10</td></tr>
+            <tr align="center"><td>BTO</td><td>5</td><td>15</td></tr>
+            <tr>
+                <td colspan="3" align="right">Sub Total</td>
+                <td align="center">6</td><td align="center">15</td>
+            </tr>
+            
+            <tr align="center">
+                <td rowspan="6">CST</td>
+                <td rowspan="4">CT</td>
+               </tr>
+               
+               <tr align="center"><td>ADS</td><td>7</td><td>10</td></tr>
+               <tr align="center"><td>BTO</td><td>8</td><td>15</td></tr>
+               <tr align="center"><td>CSI</td><td>9</td><td>6</td></tr>
+               <tr align="center"><td rowspan="2">VCT</td></tr>
+               <tr align="center"><td>ADS</td><td>10</td><td>10</td></tr>
+               
+               <tr>
+                   <td colspan="3" align="right">Sub Total</td>
+                   <td align="center">11</td><td align="center">15</td>
+               </tr>
+           </table>
+
+           <p></p>
+       </article>
+   </main>
+   <nav class="left column">
+    <h3>Media & table</h3>
+    <ul>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="table.html">Table</a></li>
+    </ul>
+    <h3>About & contact</h3>
+    <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+   </nav> 
+   <div class="right column">
+       <h3>Right heading</h3>
+       <p></p>
+   </div>
+</div>
+
+
+
+<div class="footer-wrapper">
+    <footer class="footer">
+        <div class="column-left">
+            <a href="index.html" class="logo">
+                    <img src="../assets/img/logo.png"  width="75" height="65"  alt="" /> 
+                </a>
+            <div class="copiright">
+                <div class="table-cell">
+                    © 2020. All rights reserved.
+                </div>
+            </div>
+        </div>
+        </footer>
+</div>
+</body>
+</html>
