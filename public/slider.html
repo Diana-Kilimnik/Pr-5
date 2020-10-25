@@ -4,8 +4,8 @@
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
    <title>3 Column Layout</title>
    <link rel="stylesheet" href="../assets/css/layout.css">
-   <link rel="style" href="../assets/css/style.css">
-   <link rel="" href="../assets/js/slider.js">
+   <link rel="stylesheet" href="../assets/css/style.css">
+   <link rel="stylesheet" href="../assets/css/slide.css">
 </head>
 
 <body>
@@ -22,8 +22,9 @@
    <main class="center column">
        <article>
            <h1>SLIDER</h1>
-           <img src="images/main.jpg" alt="" /> 
-           <p></p>
+           <div id="mySlider"></div>
+           <button onclick="prevSlide()">Prev</button>
+           <button onclick="nextSlide()">Next</button>
        </article>
    </main>
    <nav class="left column">
@@ -34,8 +35,10 @@
     </ul>
     <h3>About & contact</h3>
     <ul>
+        <li><a href="slider.html">Slider</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
+        
     </ul>
    </nav> 
    <div class="right column">
@@ -58,4 +61,5 @@
         </footer>
 </div>
 </body>
+<script src="../assets/js/script.js"></script>
 </html>
