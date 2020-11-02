@@ -83,3 +83,11 @@ nav ul a {
 .container .column {
    padding-top: 1em;
 }
+
+canvas{
+    outline: 2px dashed rgba(101, 177, 66, 0.8); 
+    outline-offset: -10px; 
+    padding: 10px; 
+    min-height: 100px; 
+    width: 600px;
+}
