@@ -53,7 +53,7 @@ function addClick(x, y, dragging){
 
 function redraw(){
    context.clearRect(0, 0, context.canvas.width, context.canvas.height);
-   context.fillStyle = myColor;
+   context.strokeStyle = myColor;
    context.lineWidth = myWidth;
    context.lineJoin = "round";
    
